@@ -79,7 +79,6 @@ module.exports = (grunt) ->
   grunt.registerMultiTask "injectFilePaths", "Process index.html template", ->
     dirRE = new RegExp("^(" + grunt.config("build_dir") + "|" + grunt.config("compile_dir") + ")/", "g")
 
-    console.log(@filesSrc);
     jsFiles = filterForJS(@filesSrc).map((file) ->
       file.replace dirRE, ""
     )

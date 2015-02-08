@@ -1,4 +1,5 @@
-##Patrick Gold Portfolio Website (patrickgold.com)
+##Patrick Gold Portfolio Website
+### [patrickgold.com](http://patrickgold.com)
 
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 

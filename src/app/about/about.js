@@ -4,10 +4,10 @@ angular.module( 'app.about', [
 ])
 
 .config(function config( $stateProvider ) {
-  $stateProvider.state( 'about', {
+  $stateProvider.state( 'layout.about', {
     url: '/about',
     views: {
-      "main": {
+      "page": {
         controller: 'AboutController',
         templateUrl: 'app/about/about.tpl.html'
       }

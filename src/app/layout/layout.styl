@@ -1,0 +1,33 @@
+.layout-wrapper {
+  height:100%;
+  .ui-view-container {
+    position: relative;
+
+    &.ng-enter, &.ng-leave {
+      opacity:0;
+    }
+
+    &.ng-enter {
+      animation-name: fadeInDown
+      animation-duration: 1s
+      animation-delay: 0
+    }
+
+    &.ng-enter-active {
+
+    }
+
+    &.ng-leave {
+      animation-name: fadeOutDown
+      animation-duration: 1s
+      animation-delay: 0
+    }
+
+    &.ng-leave-active {
+
+    }
+
+  }
+}
+
+@import 'sidebarDrawerDirective/sidebarDrawerDirective.styl'

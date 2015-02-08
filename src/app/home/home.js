@@ -22,10 +22,10 @@ angular.module( 'app.home', [
  * this way makes each module more "self-contained".
  */
 .config(function config( $stateProvider ) {
-  $stateProvider.state( 'home', {
+  $stateProvider.state( 'layout.home', {
     url: '/home',
     views: {
-      "main": {
+      "page": {
         controller: 'HomeController',
         templateUrl: 'app/home/home.tpl.html'
       }
@@ -37,7 +37,7 @@ angular.module( 'app.home', [
 /**
  * And of course we define a controller for our route.
  */
-.controller( 'HomeController', function HomeController( $scope ) {
+.controller( 'HomeController', function HomeController( $scope, $element ) {
     console.log("HOME!");
 })
 

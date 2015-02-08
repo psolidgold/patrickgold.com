@@ -16,7 +16,7 @@
   "devDependencies": {
     "autoprefixer-stylus": "*",
     "bower": "*",
-    "grunt-browser-sync": "*",
+    "grunt-browser-sync": "^1.9.1",
     "grunt-bump": "*",
     "grunt-concurrent": "*",
     "grunt-contrib-clean": "*",

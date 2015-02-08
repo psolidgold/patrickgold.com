@@ -1,14 +1,14 @@
 angular.module( 'app', [
   'templates-app',
   'templates-common',
-  'app.home',
-  'app.about',
+  'app.layout',
+  'ngAnimate',
   'ui.router'
 ])
 
-.config( function myAppConfig ( $stateProvider, $urlRouterProvider ) {
+.config( function myAppConfig ( $stateProvider, $urlRouterProvider, $httpProvider ) {
   $urlRouterProvider.otherwise( '/home' );
-
+  $httpProvider.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 })
 
 .run( function run () {

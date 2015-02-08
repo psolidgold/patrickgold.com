@@ -1,6 +1,6 @@
 #Patrick Gold Portfolio
 
-##Dependences
+##Dependencies
 * Node & npm install
 * Grunt install globally
 
@@ -14,5 +14,4 @@ To get up and running as quickly as possible, run:
 This will install all node modules, all bower components, and start a local server using BrowserSync
 
 ##Credits
-
 The grunt task loading has been borrowed heavily from [Bolt](https://github.com/argyleink/Bolt) with some changes here and there to better support angular.

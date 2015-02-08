@@ -1,0 +1,47 @@
+{
+  "name": "Portfolio Website",
+  "version": "0.0.1",
+  "author": "Patrick Gold",
+  "private": false,
+  "main": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/psolidgold/patrickgold.com.git"
+  },
+  "scripts": {
+    "postinstall": "node_modules/.bin/bower install && grunt",
+    "start": "node server.js",
+    "test": "node_modules/.bin/bower install && grunt test"
+  },
+  "devDependencies": {
+    "autoprefixer-stylus": "*",
+    "bower": "*",
+    "grunt-browser-sync": "*",
+    "grunt-bump": "*",
+    "grunt-concurrent": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-connect": "*",
+    "grunt-contrib-concat": "^0.3.0",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-imagemin": "*",
+    "grunt-contrib-jshint": "^0.4.3",
+    "grunt-contrib-stylus": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-html2js": "^0.1.9",
+    "grunt-manifest": "*",
+    "grunt-ngmin": "0.0.2",
+    "grunt-newer": "*",
+    "grunt-notify": "*",
+    "grunt-shell": "*",
+    "grunt-svgmin": "*",
+    "grunt-uncss": "*",
+    "jit-grunt": "*",
+    "load-grunt-configs": "*",
+    "matchdep": "*",
+    "time-grunt": "*"
+  },
+  "dependencies": {
+    "clientjade": "^0.1.1"
+  }
+}

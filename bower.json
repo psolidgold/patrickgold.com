@@ -1,0 +1,31 @@
+{
+  "name": "Patrick Gold - Portfolio",
+  "version": "0.0.1",
+  "homepage": "",
+  "authors": [
+    "Patrick Gold <psolidgold@gmail.com>"
+  ],
+  "description": "Open sourced components",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "~1.2",
+    "angular-mocks": "~1.2",
+    "bootstrap": "~3.1",
+    "angular-bootstrap": "~0.10.0",
+    "angular-ui-router": "~0.2",
+    "jquery": "^1.8.0",
+    "jquery.finger": "~0.1.2",
+    "scriptjs": "~2.5.7",
+    "device-detect.js": "*"
+  },
+  "resolutions": {
+    "jquery": "^1.8.0"
+  }
+}

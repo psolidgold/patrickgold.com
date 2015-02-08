@@ -40,6 +40,12 @@ module.exports =
     files: [ "<%= app_files.coffee %>" ]
     tasks: [ "coffeelint:src", "coffee:source", "copy:build_appjs" ]
 
+  ###
+  When the Stylus files change, we need to compile and minify them.
+  ###
+  stylus:
+    files: [ "<%= app_files.stylus %>" ]
+    tasks: [ "stylus:build" ]
 
   ###
   When assets are changed, copy them. Note that this will *not* copy new
@@ -66,12 +72,7 @@ module.exports =
     tasks: [ "html2js" ]
 
 
-  ###
-  When the CSS files change, we need to compile and minify them.
-  ###
-  stylus:
-    files: [ "src/**/*.stylus" ]
-    tasks: [ "stylus:build" ]
+
 
 
   ###

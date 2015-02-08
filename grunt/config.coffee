@@ -46,7 +46,7 @@ module.exports = (grunt) ->
     atpl: [ "src/app/**/*.tpl.html" ]
     ctpl: [ "src/common/**/*.tpl.html" ]
     html: [ "src/index.tpl.html" ]
-    stylus: "src/stylus/master.styl"
+    stylus: "src/assets/**/*.styl"
 
   ###
   This is a collection of files used during testing only.

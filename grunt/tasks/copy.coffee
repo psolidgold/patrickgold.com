@@ -6,7 +6,7 @@ our project assets (images, fonts, etc.) and javascripts into
 module.exports =
     build_app_assets:
       files: [
-        src: [ "**" ]
+        src: [ "**", "!stylus", "!stylus/**/*" ]
         dest: "<%= build_dir %>/assets/"
         cwd: "src/assets"
         expand: true

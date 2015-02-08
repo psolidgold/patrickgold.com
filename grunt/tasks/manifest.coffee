@@ -4,8 +4,8 @@ module.exports = manifest:
     timestamp: true
   src: [
     '*.html'
-    'js/*'
-    'styles/*.css'
-    'img/*.{jpg,gif,png,ico,svg,jpeg}'
+    'assets/js/*'
+    'assets/css/*.css'
+    'assets/img/*.{jpg,gif,png,ico,svg,jpeg}'
   ]
   dest: 'build/tmp/manifest.appcache'

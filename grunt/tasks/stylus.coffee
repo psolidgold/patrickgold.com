@@ -12,7 +12,7 @@ module.exports =
       "include css":  true
       use: autoprefixerPlugin
 
-    files: "<%= build_dir %>/assets/<%= pkg.name %>-<%= pkg.version %>.css": "<%= app_files.stylus %>"
+    files: "<%= build_dir %>/assets/css/<%= pkg.name %>-<%= pkg.version %>.css": "<%= app_files.stylus %>"
 
   compile:
     options:
@@ -21,5 +21,5 @@ module.exports =
       "include css":  true
       use: autoprefixerPlugin
 
-    files: "<%= build_dir %>/assets/<%= pkg.name %>-<%= pkg.version %>.css": "<%= app_files.stylus %>"
+    files: "<%= build_dir %>/assets/css/<%= pkg.name %>-<%= pkg.version %>.css": "<%= app_files.stylus %>"
 

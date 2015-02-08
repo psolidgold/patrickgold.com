@@ -27,7 +27,7 @@ To get up and running as quickly as possible:
 `grunt compile`
 
 #### Move files to HTTP server
-This repo does not provide an opinion or means of deploying your final dist files. You may copy your files
+ The final files are compiled into the `build/dist` folder. This project does not provide an opinion or means of deploying these dist files, but all you need is an http server to serve static files.
 
 
 ##Credits

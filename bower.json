@@ -17,13 +17,12 @@
   "devDependencies": {
     "angular": "~1.2",
     "angular-mocks": "~1.2",
-    "bootstrap": "~3.1",
     "angular-bootstrap": "~0.10.0",
     "angular-ui-router": "~0.2",
+    "bootstrap-stylus": "~4.0.2",
     "jquery": "^1.8.0",
     "jquery.finger": "~0.1.2",
-    "scriptjs": "~2.5.7",
-    "device-detect.js": "*"
+    "device-detect.js": "~0.0.4"
   },
   "resolutions": {
     "jquery": "^1.8.0"

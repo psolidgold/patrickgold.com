@@ -1,12 +1,12 @@
 {
-  "name": "Patrick Gold - Portfolio",
+  "name": "PatrickGold.com",
   "version": "0.0.1",
   "homepage": "",
   "authors": [
     "Patrick Gold <psolidgold@gmail.com>"
   ],
   "description": "Open sourced components",
-  "license": "MIT",
+  "license": "CC-BY-NC-4.0",
   "ignore": [
     "**/.*",
     "node_modules",

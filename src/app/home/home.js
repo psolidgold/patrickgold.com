@@ -37,8 +37,24 @@ angular.module( 'app.home', [
 /**
  * And of course we define a controller for our route.
  */
-.controller( 'HomeController', function HomeController( $scope, $element ) {
+.controller( 'HomeController', function HomeController( $scope ) {
     console.log("HOME!");
+})
+
+.directive( 'videoBackground', function(){
+    return {
+        restrict : 'E',
+        replace: false,
+        controller: function($scope, $element, $http){
+            $($element).wallpaper({
+                source: {
+                    poster: "/assets/img/home_morning_poster.jpg",
+                    mp4:    "/assets/videos/home_morning.mp4"
+                }
+            });
+        }
+    };
+
 })
 
 ;

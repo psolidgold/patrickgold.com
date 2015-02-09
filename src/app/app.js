@@ -3,6 +3,7 @@ angular.module( 'app', [
   'templates-common',
   'app.layout',
   'ngAnimate',
+  'ngRetina',
   'ui.router'
 ])
 

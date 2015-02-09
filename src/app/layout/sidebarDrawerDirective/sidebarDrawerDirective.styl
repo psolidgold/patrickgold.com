@@ -1,11 +1,120 @@
-.sidebar-drawer-wrapper {
-  position: fixed;
-  top: 0;
-  right: -200%;
-  max-width: 100%;
-  height: 100%;
-  z-index: 9000;
-  background-color: rgba(0, 0, 0, 0.85);
-  text-align: right;
-  overflow: hidden;
-}
+.sidebar-drawer-wrapper
+  position:relative
+  z-index: 9000
+
+  .drawer-toggle
+    position: absolute
+    right:20px;
+    top:20px;
+    z-index:10
+    a
+      width: 50px;
+      height: 50px;
+      display: block;
+      cursor: pointer;
+      border-radius: 100%;
+      border: 4px solid #222;
+      padding: 16px 11px;
+      position: relative;
+      .line
+        background-color: #222;
+        margin-bottom: 1px;
+        height: 3px;
+        width: 20px;
+        opacity: 1;
+        top: 0;
+        position: relative;
+        transition: all 0.25s ease-in-out;
+      &:hover
+        .line
+          &:nth-child(1)
+            transform: rotate(45deg);
+            left: -4px;
+            width: 13px;
+            top: 8px;
+          &:nth-child(2)
+            opacity: 1;
+            top: 0;
+          &:nth-child(3)
+            transform: rotate(-45deg);
+            left: -4px;
+            width: 13px;
+            top: -8px;
+            opacity: 1;
+  &.open
+    .drawer-toggle
+      a
+        transition-delay .5s;
+        border-color:#FFF
+        .line
+          transition-delay .5s;
+          background-color:#FFF;
+          &:nth-child(1)
+            transform: rotate(45deg);
+            left: 0px;
+            width: 20px;
+            top: 3px;
+          &:nth-child(2)
+            opacity: 0;
+          &:nth-child(3)
+            transform: rotate(-45deg);
+            left: 0px;
+            width: 20px;
+            top: -5px;
+
+
+  .drawer-wrapper
+    position: fixed
+    top: 0
+    right: 0
+    width: 768px
+    max-width: 100%
+    height: 100%
+    background-color: rgba(0, 0, 0, 0.85)
+    text-align: right
+    overflow: hidden
+    transform: translateX(0)
+    z-index:5
+
+    .drawer
+      text-align: center
+      font-size: 4em
+      line-height: 1.8
+      height:100%
+
+      .menu
+        list-style: none
+        padding: 0
+        margin: 0
+        position: relative
+        top: 50%
+        transform: translateY(-70%)
+
+        li
+          a
+            cursor:pointer;
+
+            &:hover
+              color:#FFF;
+
+            &.active
+                color:#555;
+
+    &.ng-hide-remove
+      animation: bounceInRight;
+      animation-duration: 1s
+      animation-delay: 0
+      transform: translateX(0)
+
+    &.ng-hide
+      animation: bounceOutRight;
+      animation-duration: 1s
+      animation-delay: 0
+      transform: translateX(2000px)
+
+    &.ng-hide-add, &.ng-hide-remove
+      display:block !important;
+
+    @media $media-sm-min
+      width: 350px;
+

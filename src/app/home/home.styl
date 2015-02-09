@@ -1,5 +1,43 @@
-.page-wrapper.home {
+.page-wrapper.home
   height:100%;
   width:100%;
-  padding:20px;
-}
+  transition: 1000ms;
+
+  .video-background-wrapper
+    height: 100%;
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
+
+  .content-wrapper
+    position:absolute;
+    height: 100%;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:2;
+
+    .logo-wrapper
+      text-align:center;
+      position: relative;
+      top: 50%;
+      transform: translateY(-70%);
+      width:205px;
+      max-width:100%;
+      margin:0 auto;
+
+      .avatar
+        margin: 0 auto 30px auto;
+        img
+          width: 50%;
+          max-width:100%;
+
+      .logo
+        padding: 0 20px;
+        img
+          width:100%;
+
+      @media $media-sm-min
+        width:285px;

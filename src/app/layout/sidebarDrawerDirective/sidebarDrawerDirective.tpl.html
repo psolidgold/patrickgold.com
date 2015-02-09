@@ -1,13 +1,20 @@
-<div class="sidebar-drawer-wrapper">
+<div class="sidebar-drawer-wrapper" ng-class="{open: open, closed: !open && dirty}">
     <div class="drawer-toggle">
-        <a href></a>
+        <a href ng-click="toggleDrawer()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </a>
     </div>
-    <div class="drawer">
-        <ul class="menu">
-            <li><a ui-sref="layout.home">Home</a></li>
-            <li><a ui-sref="layout.work">Work</a></li>
-            <li><a ui-sref="layout.about">About</a></li>
-        </ul>
-    </div>
+    <div class="drawer-wrapper" ng-show="open">
+        <div class="drawer">
+            <ul class="menu">
+                <li><a ui-sref-active="active" ui-sref="layout.home">Home</a></li>
+                <li><a ui-sref-active="active" ui-sref="layout.work">Work</a></li>
+                <li><a ui-sref-active="active" ui-sref="layout.about">About</a></li>
+            </ul>
+        </div>
 
+    </div>
 </div>
+

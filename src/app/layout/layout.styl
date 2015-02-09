@@ -1,33 +1,26 @@
-.layout-wrapper {
-  height:100%;
-  .ui-view-container {
-    position: relative;
+.layout-wrapper
+  height:100%
+  overflow: hidden
 
-    &.ng-enter, &.ng-leave {
-      opacity:0;
-    }
+  .ui-view-container
+    position: relative
+    height: 100%
+    padding:20px
 
-    &.ng-enter {
+    &.ng-enter, &.ng-leave
+      opacity:0
+
+    &.ng-enter
       animation-name: fadeInDown
       animation-duration: 1s
       animation-delay: 0
-    }
 
-    &.ng-enter-active {
-
-    }
-
-    &.ng-leave {
+    &.ng-leave
       animation-name: fadeOutDown
       animation-duration: 1s
       animation-delay: 0
-    }
 
-    &.ng-leave-active {
 
-    }
 
-  }
-}
-
+@import '../home/home.styl'
 @import 'sidebarDrawerDirective/sidebarDrawerDirective.styl'

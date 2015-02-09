@@ -17,6 +17,8 @@ angular.module( 'app.work', [
 })
 
 .controller( 'WorkController', function AboutCtrl( $scope ) {
-
+    $scope.openWorkItem = function(){
+        alert("Patience is a virtue");
+    };
 })
 ;

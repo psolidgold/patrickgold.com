@@ -35,3 +35,8 @@ To get up and running as quickly as possible:
 The grunt task loading has been borrowed heavily from [Bolt](https://github.com/argyleink/Bolt) with some changes here and there to better support angular.
 
 The angular architecture and grunt build system is inspired by [NGBP](https://github.com/ngbp/ngbp)
+
+###TODO
+
+Finish work page
+Still a couple of kinks to work out with `grunt compile`

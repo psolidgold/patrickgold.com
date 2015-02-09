@@ -41,6 +41,7 @@ module.exports = (grunt) ->
     "jshint"
     "concurrent:build"
     "copy"
+    "concat:build_css"
     "injectFilePaths:build"
   ]
 

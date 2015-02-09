@@ -19,7 +19,6 @@ module.exports =
       "<%= build_dir %>/src/components/**/*.js"
       "<%= html2js.common.dest %>"
       "<%= html2js.app.dest %>"
-      "<%= vendor_files.css %>"
       "<%= build_dir %>/assets/css/<%= pkg.name %>-<%= pkg.version %>.css"
     ]
 
@@ -31,6 +30,5 @@ module.exports =
   compile:
     dir: "<%= compile_dir %>"
     src: [ "<%= concat.compile_js.dest %>"
-           "<%= vendor_files.css %>"
            "<%= build_dir %>/assets/css/<%= pkg.name %>-<%= pkg.version %>.css"
     ]

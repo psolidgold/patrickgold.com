@@ -46,7 +46,8 @@ module.exports = (grunt) ->
     atpl: [ "src/app/**/*.tpl.html" ]
     ctpl: [ "src/common/**/*.tpl.html" ]
     html: [ "src/index.tpl.html" ]
-    stylus: "src/**/*.styl"
+    stylus: "src/assets/stylus/master.styl"
+    stylus_watch: "src/**/*.styl"
 
   ###
   This is a collection of files used during testing only.
@@ -77,12 +78,14 @@ module.exports = (grunt) ->
 
   vendor_files:
     js: [
+      "vendor/bower_components/jquery/dist/jquery.js"
       "vendor/bower_components/angular/angular.js"
       "vendor/bower_components/angular-animate/angular-animate.js"
       "vendor/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"
       "vendor/bower_components/angular-ui-router/release/angular-ui-router.js"
+      "vendor/bower_components/angular-retina/dist/angular-retina.js"
       "vendor/bower_components/angular-ui-utils/modules/route/route.js"
-
+      "vendor/bower_components/Wallpaper/jquery.fs.wallpaper.js"
     ]
-    css: []
+    css: ["vendor/bower_components/Wallpaper/jquery.fs.wallpaper.css"]
     assets: []

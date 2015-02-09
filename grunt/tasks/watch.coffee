@@ -44,8 +44,8 @@ module.exports =
   When the Stylus files change, we need to compile and minify them.
   ###
   stylus:
-    files: [ "<%= app_files.stylus %>" ]
-    tasks: [ "stylus:build" ]
+    files: [ "<%= app_files.stylus_watch %>" ]
+    tasks: [ "stylus:build", "concat:build_css" ]
 
   ###
   When assets are changed, copy them. Note that this will *not* copy new

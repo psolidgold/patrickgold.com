@@ -8,8 +8,8 @@ module.exports =
   together.
   ###
   build_css:
-    src: [ "<%= vendor_files.css %>", "<%= build_dir %>/assets/<%= pkg.name %>-<%= pkg.version %>.css" ]
-    dest: "<%= build_dir %>/assets/<%= pkg.name %>-<%= pkg.version %>.css"
+    src: [ "<%= vendor_files.css %>", "<%= build_dir %>/assets/css/<%= pkg.name %>-<%= pkg.version %>.css" ]
+    dest: "<%= build_dir %>/assets/css/<%= pkg.name %>-<%= pkg.version %>.css"
 
 
   ###
@@ -20,5 +20,5 @@ module.exports =
     options:
       banner: "<%= meta.banner %>"
 
-    src: [ "<%= vendor_files.js %>", "module.prefix", "<%= build_dir %>/public/**/*.js", "<%= html2js.app.dest %>", "<%= html2js.common.dest %>", "module.suffix" ]
-    dest: "<%= compile_dir %>/assets/<%= pkg.name %>-<%= pkg.version %>.js"
+    src: [ "<%= vendor_files.js %>", "module.prefix", "<%= build_dir %>/src/**/*.js", "<%= html2js.app.dest %>", "<%= html2js.common.dest %>", "module.suffix" ]
+    dest: "<%= compile_dir %>/assets/js/<%= pkg.name %>-<%= pkg.version %>.js"

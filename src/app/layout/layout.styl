@@ -1,26 +1,48 @@
 .layout-wrapper
-  height:100%
-  overflow: hidden
+  height:100%;
+  overflow: hidden;
 
   .ui-view-container
-    position: relative
-    height: 100%
-    padding:20px
+    position: relative;
+    height: 100%;
+
+    .page-wrapper
+      height:100%;
+      .inner
+        padding: 40px 80px 20px 20px;
+
+        @media $media-sm-min
+          padding: 80px;
+          max-width:1100px;
+          margin:0 auto;
+
+        > header
+          h1
+            font-size: 3em;
+            font-weight: 700;
+            color: #ffffff;
+            text-shadow: 1px 1px 2px #222;
+
+            @media $media-sm-min
+              font-size: 6em;
+
 
     &.ng-enter, &.ng-leave
-      opacity:0
+      opacity:0;
 
     &.ng-enter
-      animation-name: fadeInDown
-      animation-duration: 1s
-      animation-delay: 0
+      animation-name: fadeInDown;
+      animation-duration: 1s;
+      animation-delay: 0;
 
     &.ng-leave
-      animation-name: fadeOutDown
-      animation-duration: 1s
-      animation-delay: 0
+      animation-name: fadeOutDown;
+      animation-duration: 1s;
+      animation-delay: 0;
 
 
 
-@import '../home/home.styl'
-@import 'sidebarDrawerDirective/sidebarDrawerDirective.styl'
+@import '../home/home.styl';
+@import '../work/work.styl';
+@import '../about/about.styl';
+@import 'sidebarDrawerDirective/sidebarDrawerDirective.styl';

@@ -93,13 +93,38 @@
 
         li
           a
+
             cursor:pointer;
 
             &:hover
               color:#FFF;
+              text-decoration:none;
+            &.active, &:focus
+              outline:none;
+              color:#555;
+              text-decoration:none;
 
-            &.active
-                color:#555;
+      .contact-wrapper
+        position: absolute;
+        bottom: 20px;
+        font-size: 19px;
+        color: #fff;
+        margin: 0 auto;
+        left: 20px;
+        right: 20px;
+        .icon
+          font-size:30px;
+          margin:10px;
+          color:#FFF;
+          &.active, &:focus
+            outline:none;
+            text-decoration:none;
+        p.email
+          .nospam
+            margin-left:10px;
+            span
+              display:none;
+
 
     &.ng-hide-remove
       animation: bounceInRight;

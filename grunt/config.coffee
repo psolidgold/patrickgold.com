@@ -39,7 +39,7 @@ module.exports = (grunt) ->
   ###
 
   app_files:
-    js: [ "src/**/*.js", "!src/**/*.spec.js", "!src/assets/**/*.js" ]
+    js: [ "src/app/**/*.js", "!src/**/*.spec.js", "!src/assets/**/*.js" ]
     jsunit: [ "src/**/*.spec.js" ]
     coffee: [ "src/**/*.coffee", "!src/**/*.spec.coffee" ]
     coffeeunit: [ "src/**/*.spec.coffee" ]

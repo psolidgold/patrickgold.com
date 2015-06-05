@@ -53,7 +53,7 @@ module.exports = (grunt) ->
     "build"
     "stylus:compile"
     "copy:compile_assets"
-    "ngmin"
+    "ngAnnotate"
     "concat:compile_js"
     "uglify"
     "injectFilePaths:compile"

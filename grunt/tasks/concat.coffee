@@ -20,5 +20,5 @@ module.exports =
     options:
       banner: "<%= meta.banner %>"
 
-    src: [ "<%= vendor_files.js %>", "module.prefix", "<%= build_dir %>/src/**/*.js", "<%= html2js.app.dest %>", "<%= html2js.common.dest %>", "module.suffix" ]
+    src: [ "<%= vendor_files.js %>", "src/module.prefix", "<%= build_dir %>/src/app/**/*.js", "<%= html2js.app.dest %>", "<%= html2js.common.dest %>", "src/module.suffix" ]
     dest: "<%= compile_dir %>/assets/js/<%= pkg.name %>-<%= pkg.version %>.js"
